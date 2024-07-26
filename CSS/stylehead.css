@@ -1,0 +1,133 @@
+@font-face {
+  src: url(FONTS/MuseoModerno-Light.ttf);
+  font-family:navtitle;
+}
+
+@font-face {
+  src: url(FONTS/MuseoModerno-Medium.ttf);
+  font-family:title;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+.navgrid {
+  display:grid;
+  grid-template-columns:0.5fr 3fr 1fr;
+  background-color:#252323;
+}
+
+.logo {
+  width:50%;
+  height:auto;
+}
+
+.titletext {
+  color:#ffffff;
+  font-family:title;
+  font-size:24px;
+}
+
+.titletext-small {
+  color:#ffffff;
+  font-family:title;
+  font-size:17px;
+}
+
+.linkitems {
+  display:grid;
+  grid-template-columns:repeat(2, auto);
+}
+
+.center {
+  margin:auto;
+}
+
+.navtitle {
+  font-family:navtitle;
+  color:#ffffff;
+}
+
+.nav {
+  padding:20px;
+  text-decoration:none;
+  transition:all 0.7s ease;
+}
+
+.nav:hover {
+  background-color:#000000;
+  cursor: pointer;
+}
+
+#dropdownmenu {
+  right:0;
+  position:fixed;
+  z-index:1000;
+}
+
+.dropprop {
+  display:none;
+  width:0px;
+  font-size:0px;
+}
+
+
+@media (max-width:773px) {
+  .navgrid {
+    grid-template-columns:0.5fr 3fr 1fr;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #menulink {
+    display:grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #menuimg {
+    width:70px;
+    margin:auto;
+  }
+
+  #dropdownmenu {
+    background-color:#252323;
+  }
+
+  .nav {
+    width:0px;
+    font-size:0px;
+    display:none;
+  }
+
+  .nav1 {
+    padding:10px;
+    transition:all 0.7s ease;
+  }
+
+  .nav1:hover {
+    background-color:#000000;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:400px) {
+  .navgrid {
+    grid-template-columns:0.9fr 2.4fr 0.5fr;
+  }
+}
+
+
+@media (max-width: 326px) {
+  .titletext1 {
+    font-size:18px;
+  }
+}
+
+@media (max-width: 288px){
+  .titletext1 {
+    font-size:14px;
+  }
+}

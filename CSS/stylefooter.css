@@ -1,0 +1,30 @@
+.footersec {
+  display:grid;
+  grid-template-columns:2fr 4fr 2fr;
+}
+
+.footericons {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-column-gap:15px;
+}
+
+.colorwhite {
+  color:white;
+}
+
+.youtube:hover {
+  color:#FF0000;
+}
+
+.linkedin:hover {
+  color:#0072b1;
+}
+
+.instagram:hover {
+  color:#C13584;
+}
+
+.tiktok:hover {
+  color:#000000;
+}
