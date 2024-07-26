@@ -38,6 +38,7 @@ if(isset($_POST['submit'])) {
 
     }
     else {
+        echo "Success";
         $email = mysqli_real_escape_string($conn, $_POST['cemail']);
         $cmessage = mysqli_real_escape_string($conn, $_POST['cmessage']);
         date_default_timezone_set('America/New_York');

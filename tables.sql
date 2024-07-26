@@ -15,6 +15,8 @@ create table users(
     typ varchar(300) not null
 );
 
+INSERT INTO users(email, pass, fname, lname, typ) VALUES('thektutoring@gmail.com', '123karan', 'Karan', 'C', 'owner');
+
 create table numberd(
     id int(11) not null PRIMARY KEY AUTO_INCREMENT,
     ordernumber int(11) not null
@@ -22,10 +24,10 @@ create table numberd(
 
 create table viewing(
     id int(11) not null PRIMARY KEY AUTO_INCREMENT,
-    ordernumber int(11) not null,
     email varchar(300) not null,
     cmessage text not null,
-    timest varchar(300) not null
+    timest varchar(300) not null,
+    starred varchar(300) not null
 );
 
 INSERT INTO viewing(email, cmessage, timest, starred) VALUES('jenniferthomas654@hotmail.com', 'Hello, Im a university student seekings course. Are there any tutors available who can help me Your response would be greatly appreciated', 'June 15, 2023, 1:22 pm', 'yes');
@@ -61,3 +63,4 @@ create table viewingConsultation (
     consultationTimeDate int(11) not null,
     extranotes text not null
 );
+
